@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/Css/Gallery.css" />
+  </head>
+  <body>
+    <img
+      src="/images/New folder/1.jpg"
+      id="img"
+      name="img1"
+      width="20%"
+      height="50%"
+      onmouseover="playSlider();"
+      onmouseout="clearInterval(timerID)"
+    />
+    <br />
+    <button onclick="StartImages()">Start</button>
+    <button onclick="stopCurrentImages()">Stop</button>
+    <button onclick="nextPhoto()">Next</button>
+    <button onclick="Previos()">Previos</button>
+
+    <fieldset>
+      <legend>Gallery</legend>
+      <img src="/images/1.jpeg" id="opacity" />
+      <img src="/images/2.jpeg" id="opacity" />
+      <img src="/images/3.jpeg" id="opacity" />
+    </fieldset>
+
+    <script src="/JS/gallary.js"></script>
+  </body>
+</html>

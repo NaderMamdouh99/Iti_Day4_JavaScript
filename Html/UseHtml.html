@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="myDiv">
+      <p>This is my div.</p>
+    </div>
+    <script>
+      // Step a: Create image node
+      var img = document.createElement("img");
+
+      // Step b: Set image source
+      img.setAttribute("src", "/images/3.jpg");
+
+      // Step c: Append image to div
+      var div = document.getElementById("myDiv");
+      div.appendChild(img);
+
+      // Step d: Alert number of child nodes
+      alert("Number of child nodes in div: " + div.childNodes.length);
+
+      // Step e: Remove the added image
+      div.removeChild(img);
+    </script>
+  </body>
+</html>
